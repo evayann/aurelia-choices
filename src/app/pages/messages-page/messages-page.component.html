@@ -1,0 +1,7 @@
+<app-messages
+  class="h-full"
+  [conversationName]="'Test'"
+  [messageList]="messageList"
+  [responseList]="['Ok', 'Not ok', 'guess']"
+  (responseSelected)="applyPlayerChoice($event)"
+/>

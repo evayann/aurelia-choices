@@ -1,0 +1,17 @@
+@for (conversation of conversationList(); track conversation) {
+<div class="flex items-center gap-2">
+  <div class="avatar indicator">
+    <span class="indicator-item badge badge-secondary">
+      {{ conversation.newMessageCount }}
+    </span>
+    <div class="mask mask-squircle w-16">
+      <img
+        src="https://img.daisyui.com/images/profile/demo/distracted1@192.webp"
+      />
+    </div>
+  </div>
+  <p>
+    {{ conversation.name }}
+  </p>
+</div>
+}
