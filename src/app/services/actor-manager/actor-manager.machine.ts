@@ -16,8 +16,11 @@ export const actorsManagerMachine = setup({
         }),
       ],
       on: {
-        start: { target: '' },
+        start: { target: 'game' },
       },
+    },
+    game: {
+      // auto transition to load correct chapter actors in function of chapter id
     },
   },
 });

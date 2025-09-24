@@ -13,7 +13,7 @@ export const routes: Routes = [
     component: GameComponent,
     children: [
       {
-        path: '',
+        path: 'home',
         component: HomePageComponent,
       },
       {
@@ -23,6 +23,10 @@ export const routes: Routes = [
       {
         path: 'messages',
         component: MessagesPageComponent,
+      },
+      {
+        path: '**',
+        redirectTo: 'home',
       },
     ],
   },

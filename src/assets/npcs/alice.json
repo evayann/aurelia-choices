@@ -1,0 +1,9 @@
+{
+    "default": {
+        "name": "Alice",
+        "mood": "sad",
+        "nature": {
+            "timid": 3
+        }
+    }
+}

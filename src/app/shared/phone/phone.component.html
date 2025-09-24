@@ -12,7 +12,10 @@
         <ng-content />
       </div>
       <div class="relative dock dock-md">
-        <button>
+        <button
+          [ngClass]="{ 'dock-active': isActive('home') }"
+          [routerLink]="'/game/home'"
+        >
           <svg
             class="size-[1.2em]"
             xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +57,10 @@
           <span class="dock-label">Home</span>
         </button>
 
-        <button class="dock-active">
+        <button
+          [ngClass]="{ 'dock-active': isActive('messages') }"
+          [routerLink]="'/game/messages'"
+        >
           <svg
             class="size-[1.2em]"
             xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +96,10 @@
           <span class="dock-label">Inbox</span>
         </button>
 
-        <button>
+        <button
+          [ngClass]="{ 'dock-active': isActive('conversations') }"
+          [routerLink]="'/game/conversations'"
+        >
           <svg
             class="size-[1.2em]"
             xmlns="http://www.w3.org/2000/svg"

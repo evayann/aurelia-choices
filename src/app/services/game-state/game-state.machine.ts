@@ -10,7 +10,7 @@ export const gameStateMachine = setup({
   states: {
     menu: {
       on: {
-        openOptions: { target: 'options' },
+        options: { target: 'options' },
         game: { target: 'game' },
       },
     },
